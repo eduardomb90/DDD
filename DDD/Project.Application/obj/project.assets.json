@@ -1,0 +1,161 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Project.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Project.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.Domain.dll": {}
+        }
+      },
+      "Project.Infra.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Project.Infra.Data": "1.0.0",
+          "Project.Service": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Project.Infra.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.Infra.CrossCutting.dll": {}
+        }
+      },
+      "Project.Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Project.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Project.Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.Infra.Data.dll": {}
+        }
+      },
+      "Project.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Project.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Project.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Project.Domain/Project.Domain.csproj",
+      "msbuildProject": "../Project.Domain/Project.Domain.csproj"
+    },
+    "Project.Infra.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../Project.Infra.CrossCutting/Project.Infra.CrossCutting.csproj",
+      "msbuildProject": "../Project.Infra.CrossCutting/Project.Infra.CrossCutting.csproj"
+    },
+    "Project.Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../Project.Infra.Data/Project.Infra.Data.csproj",
+      "msbuildProject": "../Project.Infra.Data/Project.Infra.Data.csproj"
+    },
+    "Project.Service/1.0.0": {
+      "type": "project",
+      "path": "../Project.Service/Project.Service.csproj",
+      "msbuildProject": "../Project.Service/Project.Service.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Project.Domain >= 1.0.0",
+      "Project.Infra.CrossCutting >= 1.0.0",
+      "Project.Service >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\eduar\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Application\\Project.Application.csproj",
+      "projectName": "Project.Application",
+      "projectPath": "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Application\\Project.Application.csproj",
+      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+      "outputPath": "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Domain\\Project.Domain.csproj": {
+              "projectPath": "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Domain\\Project.Domain.csproj"
+            },
+            "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Infra.CrossCutting\\Project.Infra.CrossCutting.csproj": {
+              "projectPath": "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Infra.CrossCutting\\Project.Infra.CrossCutting.csproj"
+            },
+            "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Service\\Project.Service.csproj": {
+              "projectPath": "D:\\Programação\\CSharp\\DDD\\DDD\\Project.Service\\Project.Service.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
